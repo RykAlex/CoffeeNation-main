@@ -1,0 +1,39 @@
+section {
+  margin-bottom: 100px;
+  .slider-m {
+    display: none;
+  }
+}
+.section1 h2 {
+  margin-bottom: 40px;
+}
+section h2 {
+  margin-bottom: 8px;
+}
+.section3 h2 {
+  margin-bottom: 56px;
+}
+.section10 {
+  margin-bottom: 27px;
+}
+@media screen and (max-width: $mobile) {
+  .mobile,
+  section .slider-m {
+    display: block;
+  }
+  section h2 {
+    margin: 0 auto;
+  }
+  section {
+    margin-bottom: 56px;
+  }
+  .section1 h2 {
+    margin-bottom: 24px;
+  }
+  section {
+    margin-bottom: 56px;
+  }
+  .section3 h2 {
+    margin-bottom: 32px;
+  }
+}

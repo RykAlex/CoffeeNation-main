@@ -1,0 +1,37 @@
+.endless-tags {
+  .row {
+    display: flex;
+    li {
+      flex-shrink: 0;
+      .tag {
+        transition: all linear 0.4s;
+      }
+      &:nth-child(2n) {
+        .tag {
+          background: $beuge;
+        }
+      }
+      &:nth-child(3n) {
+        .tag {
+          background: $background-yellow;
+        }
+      }
+      &:nth-child(4n) {
+        .tag {
+          background: $background-blue;
+        }
+      }
+    }
+  }
+
+  .mask.reverse {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+@media screen and (max-width: $mobile) {
+  .endless-tags .row {
+    display: flex;
+    margin-bottom: -45px;
+  }
+}

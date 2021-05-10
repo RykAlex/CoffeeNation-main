@@ -1,0 +1,283 @@
+.m {
+  &x-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &x-0 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  &y-0 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &-0 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  &b-0 {
+    margin-bottom: 0;
+  }
+
+  &t-0 {
+    margin-top: 0;
+  }
+
+  &l-0 {
+    margin-left: 0;
+  }
+
+  &r-0 {
+    margin-right: 0;
+  }
+
+  @for $i from 1 through 16 {
+    &t-#{$i} {
+      margin-top: 8px * $i;
+    }
+  }
+
+  @for $i from 1 through 16 {
+    &r-#{$i} {
+      margin-right: 8px * $i;
+    }
+  }
+
+  @for $i from 1 through 16 {
+    &b-#{$i} {
+      margin-bottom: 8px * $i;
+    }
+  }
+
+  @for $i from 1 through 16 {
+    &l-#{$i} {
+      margin-left: 8px * $i;
+    }
+  }
+
+  @for $i from 1 through 16 {
+    &y-#{$i} {
+      margin-top: 8px * $i;
+      margin-bottom: 8px * $i;
+    }
+  }
+
+  @media screen and (max-width: $desktop) {
+    &x-lg-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &x-lg-0 {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &y-lg-0 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    &-lg-0 {
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &b-lg-0 {
+      margin-bottom: 0;
+    }
+
+    &t-lg-0 {
+      margin-top: 0;
+    }
+
+    &l-lg-0 {
+      margin-left: 0;
+    }
+
+    &r-lg-0 {
+      margin-right: 0;
+    }
+
+    @for $i from 1 through 16 {
+      &t-lg-#{$i} {
+        margin-top: 8px * $i;
+      }
+    }
+
+    @for $i from 1 through 16 {
+      &r-lg-#{$i} {
+        margin-right: 8px * $i;
+      }
+    }
+
+    @for $i from 1 through 16 {
+      &b-lg-#{$i} {
+        margin-bottom: 8px * $i;
+      }
+    }
+
+    @for $i from 1 through 16 {
+      &l-lg-#{$i} {
+        margin-left: 8px * $i;
+      }
+    }
+
+    @for $i from 1 through 16 {
+      &y-lg-#{$i} {
+        margin-top: 8px * $i;
+        margin-bottom: 8px * $i;
+      }
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    &x-md-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &x-md-0 {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &y-md-0 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    &-md-0 {
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &b-md-0 {
+      margin-bottom: 0;
+    }
+
+    &t-md-0 {
+      margin-top: 0;
+    }
+
+    &l-md-0 {
+      margin-left: 0;
+    }
+
+    &r-md-0 {
+      margin-right: 0;
+    }
+
+    @for $i from 1 through 16 {
+      &t-md-#{$i} {
+        margin-top: 8px * $i;
+      }
+    }
+
+    @for $i from 1 through 16 {
+      &r-md-#{$i} {
+        margin-right: 8px * $i;
+      }
+    }
+
+    @for $i from 1 through 16 {
+      &b-md-#{$i} {
+        margin-bottom: 8px * $i;
+      }
+    }
+
+    @for $i from 1 through 16 {
+      &l-md-#{$i} {
+        margin-left: 8px * $i;
+      }
+    }
+
+    @for $i from 1 through 16 {
+      &y-md-#{$i} {
+        margin-top: 8px * $i;
+        margin-bottom: 8px * $i;
+      }
+    }
+  }
+
+  @media screen and (max-width: $mobile) {
+    &x-sm-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &x-sm-0 {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &y-sm-0 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    &-sm-0 {
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &b-sm-0 {
+      margin-bottom: 0;
+    }
+
+    &t-sm-0 {
+      margin-top: 0;
+    }
+
+    &l-sm-0 {
+      margin-left: 0;
+    }
+
+    &r-sm-0 {
+      margin-right: 0;
+    }
+
+    @for $i from 1 through 16 {
+      &t-sm-#{$i} {
+        margin-top: 8px * $i;
+      }
+    }
+
+    @for $i from 1 through 16 {
+      &r-sm-#{$i} {
+        margin-right: 8px * $i;
+      }
+    }
+
+    @for $i from 1 through 16 {
+      &b-sm-#{$i} {
+        margin-bottom: 8px * $i;
+      }
+    }
+
+    @for $i from 1 through 16 {
+      &l-sm-#{$i} {
+        margin-left: 8px * $i;
+      }
+    }
+
+    @for $i from 1 through 16 {
+      &y-sm-#{$i} {
+        margin-top: 8px * $i;
+        margin-bottom: 8px * $i;
+      }
+    }
+  }
+}

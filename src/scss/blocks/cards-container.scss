@@ -1,0 +1,49 @@
+.container-1_1 {
+  padding-bottom: 100%;
+  position: relative;
+  height: 0;
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 32px;
+    img {
+      height: auto;
+      width: 100%;
+      object-fit: cover;
+      transition: all 0.2s linear;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+.container-1_6 {
+  padding-bottom: 62.5%;
+  position: relative;
+  height: 0;
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 32px;
+    img {
+      height: auto;
+      width: 100%;
+      object-fit: cover;
+      transition: all 0.2s linear;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}

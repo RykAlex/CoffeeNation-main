@@ -1,0 +1,105 @@
+.slider {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  .slick-list {
+    overflow: visible;
+    transform: translateX(-285px) !important;
+  }
+  .slide {
+    display: block;
+    outline: none;
+    margin-right: 32px;
+    transition: all linear 0.5s;
+    &:not(.slick-active) {
+      position: relative;
+      opacity: 0.5;
+    }
+  }
+
+  .slide-item {
+    width: 538px;
+  }
+
+  @media screen and (max-width: $tablet) {
+  }
+
+  @media screen and (max-width: $mobile) {
+    position: static;
+    width: initial;
+    transform: initial;
+    left: initial;
+    top: initial;
+    .slick-list {
+      overflow: visible;
+      transform: initial !important;
+    }
+
+    .slide-item {
+      width: calc(100vw - 32px);
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .slider-m {
+    width: 600px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    .slick-list {
+      overflow: visible;
+      transform: translateX(0) !important;
+    }
+    .slide {
+      display: block;
+      outline: none;
+      margin-right: 32px;
+      transition: all linear 0.5s;
+      &:not(.slick-active) {
+        position: relative;
+        opacity: 0.5;
+      }
+    }
+
+    .slide-item {
+      width: calc(100vw - 115px);
+    }
+  }
+  .cards-item {
+    display: none;
+  }
+}
+@media screen and (max-width: $tablet) {
+  .slider-m {
+    width: 768px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    .slick-list {
+      overflow: visible;
+      transform: translateX(0) !important;
+    }
+    .slide {
+      display: block;
+      outline: none;
+      margin-right: 32px;
+      transition: all linear 0.5s;
+      &:not(.slick-active) {
+        position: relative;
+        opacity: 0.5;
+      }
+    }
+
+    .slide-item {
+      width: calc(100vw - 115px);
+    }
+  }
+}

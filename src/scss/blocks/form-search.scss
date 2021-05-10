@@ -1,0 +1,156 @@
+.search {
+  display: flex;
+  position: relative;
+  img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    cursor: pointer;
+  }
+  .search-form {
+    position: absolute;
+    top: -11px;
+    right: -11px;
+    display: flex;
+    align-items: center;
+    width: 260px;
+    z-index: -1;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.2s linear;
+    &.show {
+      z-index: 1;
+      opacity: 1;
+    }
+  }
+  .close {
+    margin-right: 13px;
+  }
+  .glass {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  label {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border-bottom: none;
+  }
+  .wrapper {
+    cursor: initial;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid #74766c;
+  }
+}
+.search-form input {
+  outline: none;
+  border: none;
+  background: none;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border-radius: 82px;
+  border: none;
+  font-size: inherit;
+}
+@media screen and (max-width: $mobile) {
+  .desktop {
+    display: none;
+  }
+
+  .always {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 16px;
+    .logo-m {
+      display: flex;
+      width: 163px;
+      height: auto;
+    }
+    .burger {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  /* Mobile search
+=======================*/
+  .slide-menu {
+    display: flex;
+    position: fixed;
+    overflow: auto;
+    z-index: 1000;
+    background: #fff;
+    padding: 88px 54px;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.2s linear;
+    &.show {
+      transform: translateX(-100%);
+      z-index: 10000;
+      opacity: 1;
+    }
+  }
+  .close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    opacity: 0.5;
+  }
+
+  .search {
+    display: flex;
+    position: relative;
+    margin-bottom: 24px;
+    img {
+      width: 16px;
+      height: 16px;
+      object-fit: contain;
+      cursor: pointer;
+    }
+    .search-form {
+      position: static;
+      top: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      width: 212px;
+      z-index: 1;
+      overflow: hidden;
+      opacity: 1;
+    }
+    .close {
+      margin-right: 13px;
+    }
+
+    label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 11px;
+      border-bottom: 1px solid #74766c;
+    }
+    .wrapper {
+      cursor: initial;
+      padding: 0;
+      width: 212px;
+      border-radius: 0;
+      border: none;
+    }
+    input {
+      background: none;
+      outline: none;
+      border: none;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.row-tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 355px;
+  margin: 0 auto;
+}
+.tag {
+  @extend .subtitle;
+  padding: 24px 40px;
+  background: $green-light;
+  display: inline-flex;
+  border-radius: 55px;
+  color: black;
+  margin-right: 15px;
+
+  &.small {
+    padding: 8px 16px;
+    @extend .caption;
+    color: black;
+  }
+
+  &:nth-child(2n) {
+    background: $beuge;
+  }
+
+  &:nth-child(3n) {
+    background: $background-blue;
+  }
+
+  @media screen and (max-width: $tablet) {
+  }
+}
+@media screen and (max-width: $mobile) {
+  .tag {
+    padding: 12px 20px;
+  }
+  .row-tags {
+    margin-bottom: 24px;
+  }
+}

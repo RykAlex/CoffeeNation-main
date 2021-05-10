@@ -1,0 +1,36 @@
+.absolute-container-1 {
+	padding-bottom: 100%;
+	position: relative;
+	height: 0;
+	.content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+}
+.absolute-container-1_6 {
+	padding-bottom: 62.5%;
+	position: relative;
+	height: 0;
+	.content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+}

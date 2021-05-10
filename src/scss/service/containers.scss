@@ -1,0 +1,36 @@
+$mobile: "899px";
+$tablet: "1199px";
+$desktop: "1599px";
+$big-desktop: "1919px";
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 40px;
+  margin: auto;
+  position: relative;
+
+  &-wide {
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+  }
+
+  &-medium {
+    width: 100%;
+    max-width: 760px;
+    margin: auto;
+  }
+
+  &-small {
+    width: 100%;
+    max-width: 680px;
+    margin: auto;
+  }
+  @media screen and (max-width: $tablet) {
+  }
+
+  @media screen and (max-width: $mobile) {
+    padding: 0 16px;
+  }
+}

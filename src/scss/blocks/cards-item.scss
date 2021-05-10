@@ -1,0 +1,90 @@
+.cards {
+  display: flex;
+  margin: 0 -16px;
+  @media screen and (max-width: $mobile) {
+    flex-wrap: wrap;
+  }
+  .cards-item {
+    width: 33.3333333%;
+    margin: 0 16px;
+
+    @media screen and (max-width: $mobile) {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+}
+
+.row-filter {
+  margin-bottom: 48px;
+  text-align: center;
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 24px;
+  }
+  .show-all {
+    display: flex;
+    justify-content: center;
+
+    h5 {
+      color: $green;
+      font-family: Inter;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}
+a svg {
+  display: flex;
+  text-align: center;
+}
+.show-all:hover *,
+.show-all h5:hover {
+  fill: $green-dark;
+  color: $green-dark;
+}
+a.show-all h5:hover {
+  color: $green-dark;
+}
+a.show-all:hover * {
+  fill: $green-dark;
+}
+
+.subtitle {
+  color: $dark-middle;
+  margin-bottom: 24px;
+}
+img .video {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+.video {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 1000;
+}
+
+.row-info {
+  margin-top: 26px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+  .item {
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    margin-right: 8px;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+}

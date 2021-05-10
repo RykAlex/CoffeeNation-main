@@ -1,0 +1,97 @@
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 458px;
+  border: 2px solid $dark-middle;
+  border-radius: 16px;
+  padding-top: 102px;
+}
+.subtitle-small {
+  margin-top: 16px;
+  font-family: Inter;
+  color: $dark-middle;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 140%;
+  width: 692px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.form-btn {
+  display: flex;
+  width: 460px;
+  height: 64px;
+}
+input {
+  width: 100%;
+  height: 100%;
+  padding-left: 25px;
+  outline: none;
+  background: #f0f8e9;
+  border-radius: 82px;
+  border: none;
+  font-size: inherit;
+}
+label {
+  display: flex;
+  position: relative;
+  font-size: 18px;
+  width: 100%;
+  height: 100%;
+}
+.btn {
+  position: absolute;
+  width: 180px;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  height: calc(100% - 18px);
+  background-color: $green;
+  color: #fff;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 170%;
+  border-radius: 72px;
+  &:hover {
+    cursor: pointer;
+    background-color: $green-dark;
+  }
+}
+@media screen and (max-width: $mobile) {
+  .subscribe {
+    padding-top: 32px;
+    height: 400px;
+    margin-bottom: 55px;
+  }
+  .subtitle-small {
+    font-size: 18px;
+    width: 288px;
+  }
+  .form-btn {
+    width: 254px;
+    height: 48px;
+  }
+  .btn {
+    position: absolute;
+    width: 254px;
+    top: 150%;
+    right: 0px;
+    transform: translateY(0);
+    height: 100%;
+    background-color: #36a968;
+    color: #fff;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 170%;
+    border-radius: 82px;
+    &:hover {
+      cursor: pointer;
+      background-color: $green-dark;
+    }
+  }
+}

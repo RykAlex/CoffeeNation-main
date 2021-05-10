@@ -1,0 +1,18 @@
+ol {
+	list-style-type: none;
+	list-style-position: inside;
+	counter-set: num;
+
+	li {
+		display: flex;
+		margin-bottom: 32px;
+		&:before {
+			font-weight: 700;
+			display: block;
+			width: 21px;
+			margin-right: 24px;
+			counter-increment: num;
+			content: counter(num);
+		}
+	}
+}
